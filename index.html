@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Giphtastic</title>
+</head>
+<body>
+    <body id="body">
+        <div class="container">
+        <div class="jumbotron" id="header">
+
+          <h1>NBA Players</h1>
+          <h4>Click the buttons to display GIPHYs of your favorite NBA players<br>Click the GIPHYs to pause and play<br>Search to add more players!</h4>
+        </div>
+        
+        <form class="form-inline" id="nbaSearch">
+          <div class="form-group">
+            <label for="nbaInput">Search for a NBA players</label>
+            <input type="text" id="nbaInput">
+          </div>
+          <!-- Button triggers players to be added -->
+          <input id="addPlayers" type="submit" value="submit">
+        </form>
+        
+        <div class="row">
+          <div class="container">
+            <div class="btn-group inline pull-left">
+              <button class="btn btn-primary" id="players" data-search="LeBron James">LeBron James</button>
+              <button class="btn btn-primary" id="players" data-search="Kobe Bryant">Kobe Bryant</button>
+              <button class="btn btn-primary" id="players" data-search="James Harden">James Harden</button>
+              <button class="btn btn-primary" id="players" data-search="Michael Jordan">Michael Jordan</button>
+        
+              <div id="myButtons"></div>
+            </div> <!--end of button group -->
+          </div> <!--end of container -->
+        </div> <!--end of row -->
+    </div>
+        
+        
+        <div class="row">
+          <div class="container">
+              <span><div id="gifArea"></div></span>
+          </div> <!--end of container -->
+        </div> <!-- end of row  -->
+        
+        
+        <script type="text/javascript" src="assets/js/app.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+</html>
